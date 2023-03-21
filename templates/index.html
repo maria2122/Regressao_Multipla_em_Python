@@ -5,48 +5,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Teste do Modelo</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+  <link rel="stylesheet" href="/static/estilo.css">
+
 </head>
+<header>
+  <h1>{{ titulo }}</h1>
+</header>
 
 <body>
-  <div class="page-header">
-    <h1>{{ titulo }}</h1>
-  </div>
+
+
+
 
   <form action="{{ url_for('classifica') }}" method="post" enctype="multipart/form-data">
-    <div class="row">
-      <div class="col-md-4">
-      </div>
-      <div class="col-md-8">
-        <fieldset>
 
-          <div class="form-group">
-            <label for="comprimentoS">Comprimento da Sépala</label>
-            <input type="text" id="comprimentoS" name="comprimentoS" class="form-control">
-          </div>
-
-          <div class="form-group">
-            <label for="larguraS">Largura da Sépalaaa</label>
-            <input type="text" id="larguraS" name="larguraS" class="form-control">
-          </div>
-
-          <div class="form-group">
-            <label for="comprimentoP">Comprimento da Pétala</label>
-            <input type="text" id="comprimentoP" name="comprimentoP" class="form-control">
-          </div>
-
-          <div class="form-group">
-            <label for="larguraP">Largura da Pétala</label>
-            <input type="text" id="larguraP" name="larguraP" class="form-control">
-          </div>
-
-      </div>
-      <button type="submit" class="btn btn-primary btn-salvar">Classificar</button>
-
-      </fieldset>
+    <div>
+      <label for="comprimentoS">Comprimento da Sépala</label>
+      <input type="text" id="comprimentoS" name="comprimentoS">
     </div>
+
+    <div>
+      <label for="larguraS">Largura da Sépala</label>
+      <input type="text" id="larguraS" name="larguraS">
     </div>
+
+    <div>
+      <label for="comprimentoP">Comprimento da Pétala</label>
+      <input type="text" id="comprimentoP" name="comprimentoP">
+    </div>
+
+    <div>
+      <label for="larguraP">Largura da Pétala</label>
+      <input type="text" id="larguraP" name="larguraP">
+    </div>
+
+    <input type="submit" id="botao" value="Enviar"></input>
+
   </form>
 
 </body>

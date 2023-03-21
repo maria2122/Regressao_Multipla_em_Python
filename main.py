@@ -23,4 +23,7 @@ def classifica():
         classe='Iris-virginica'
     return classe
 
-app.run()
+
+
+if __name__ == "__main__":
+    app.run(debug=True)

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600;700&family=Bebas+Neue&family=Signika+Negative:wght@300;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+:root{
+    --fonte_principal:'Signika Negative', sans-serif;
+    --fonte_segundaria:'Alkatra', cursive;
+
+    --cor0:#90fcf9;
+    --cor1:#028090;
+    --cor2: #114b5f;
+    --cor3:#993955;
+}
+
+
+header{
+    background-image:linear-gradient(to top, var(--cor0), var(--cor2));
+}
+header > h1{
+    font-size: 80px;
+    text-align: center;
+    font-family: var(--fonte_principal);
+    font-weight: lighter;
+}
+
+
+label{
+    font-family: var(--fonte_segundaria);
+    font-size: 30px;
+    padding: 20px;  
+}
+
+input{
+    font-size: 25px;
+    font-family: var(--fonte_principal);
+    max-width: 40px;
+    border-radius: 5px;
+   
+}
+
+form{
+    background-color: var(--cor1);
+}
+
+
+#botao{
+    font-size: 40px;
+    font-family: var(--fonte_segundaria);
+    max-width: 500px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 100px;
+}
