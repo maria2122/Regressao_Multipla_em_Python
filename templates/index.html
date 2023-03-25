@@ -17,32 +17,57 @@
 
 
 
+<section>
   <form action="{{ url_for('classifica') }}" method="post" enctype="multipart/form-data">
 
-    <div>
-      <label for="comprimentoS">Comprimento da Sépala</label>
-      <input type="text" id="comprimentoS" name="comprimentoS">
-    </div>
+    <label for="SalarioAj">Salário medio Ajustado</label>
+    <input type="text" id="SalarioAj" name="SalarioAj">
+
+
+  <div>
+    <label for="SalarioNa">Sálario medio não ajustado</label>
+    <input type="text" id="SalarioNa" name="SalarioNa">
+</div>
+
+  <div>
+    <label for="NumeroEmp">Numero de empregos</label>
+    <input type="text" id="NumeroEmp" name="NumeroEmp">
+</div>
+
+<div>
+    <label for="PrecoMC">Preço mediano da casa</label>
+    <input type="text" id="PrecoMC" name="PrecoMC">
+</div>
 
     <div>
-      <label for="larguraS">Largura da Sépala</label>
-      <input type="text" id="larguraS" name="larguraS">
-    </div>
+  <label for="CustoM">Custo de vida médio</label>
+    <input type="text" id="CustoM" name="CustoM">
+</div>
 
     <div>
-      <label for="comprimentoP">Comprimento da Pétala</label>
-      <input type="text" id="comprimentoP" name="comprimentoP">
-    </div>
+  <label for="MediaAlug">Aluguel Médio</label>
+    <input type="text" id="MediaAlug" name="mediaAlug">
+</div>
 
     <div>
-      <label for="larguraP">Largura da Pétala</label>
-      <input type="text" id="larguraP" name="larguraP">
-    </div>
+   <label for="CustMediaAlug">Custo de vida + Aluguel Médio</label>
+    <input type="text" id="CustMediaAlug" name="CustmediaAlug">
+</div>
 
-    <input type="submit" id="botao" value="Enviar"></input>
+    <div>
+   <label for="PoderCompra">Poder de compra local(Meédia)</label>
+    <input type="text" id="PoderCompra" name="PoderCompra">
 
-  </form>
+</div>
 
+
+
+
+
+  <input type="submit" id="botao" value="Enviar"></input>
+
+</form>
+</section>
 </body>
 
 </html>

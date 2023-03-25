@@ -18,41 +18,19 @@
 
 
 header{
-    background-image:linear-gradient(to top, var(--cor0), var(--cor2));
+ 
 }
 header > h1{
     font-size: 80px;
     text-align: center;
-    font-family: var(--fonte_principal);
-    font-weight: lighter;
+    border: #028090;
 }
 
-
-label{
-    font-family: var(--fonte_segundaria);
-    font-size: 30px;
-    padding: 20px;  
-}
-
-input{
-    font-size: 25px;
-    font-family: var(--fonte_principal);
-    max-width: 40px;
-    border-radius: 5px;
-   
-}
-
-form{
-    background-color: var(--cor1);
+section{
+   border: black 20px;
 }
 
 
 #botao{
-    font-size: 40px;
-    font-family: var(--fonte_segundaria);
-    max-width: 500px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 5px;
-    margin-left: 100px;
+
 }
