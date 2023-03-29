@@ -66,10 +66,17 @@
 
         </div>
         <div class="text-center">
-          <button type="button" id="botao" class="btn btn-outline-success" value="Enviar">Enviar</button>
+          <button onclick="operacao()" type="button" id="botao" class="btn btn-outline-success"
+            value="Enviar">Enviar</button>
         </div>
 
     </form>
+
+    <section id="resultado">
+
+
+
+    </section>
   </main>
 
   <footer>
@@ -85,6 +92,19 @@
 
     </p>
   </footer>
+  <script>
+    function operacao() {
+
+      let resultado = document.getElementById(`resultado`)
+
+      resultado.innerHTML = `testando aqui`
+
+
+    }
+
+
+
+  </script>
 </body>
 
 </html>

@@ -84,3 +84,10 @@ footer>ul>li>a{
     color: var(--cor1);
 }
 
+#resultado{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    
+
+}
