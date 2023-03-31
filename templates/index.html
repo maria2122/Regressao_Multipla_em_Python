@@ -21,47 +21,49 @@
   <main>
     <form action="{{ url_for('classifica') }}" method="post" enctype="multipart/form-data">
 
-      <label for="SalarioAj">Salário medio Ajustado</label>
-      <input type="number" id="SalarioAj" name="SalarioAj">
+      <label for="SalarioA">Salário Ajustado</label>
+      <input type="number" id="SalarioA" name="SalarioA">
 
 
       <div>
-        <label for="SalarioNa">Sálario medio não ajustado</label>
+        <label for="SalarioNa">Sálario não ajustado</label>
         <input type="number" id="SalarioNa" name="SalarioNa">
 
 
         <div>
-          <label for="NumeroEmp">Numero de empregos</label>
+          <label for="NumeroEmp">Número de empregos</label>
           <input type="number" id="NumeroEmp" name="NumeroEmp">
         </div>
 
         <div>
-          <label for="PrecoMC">Preço mediano da casa</label>
-          <input type="number" id="PrecoMC" name="PrecoMC">
-        </div>
-
-        <div>
-          <label for="CustoM">Custo de vida médio</label>
-          <input type="number" id="CustoM" name="CustoM">
+          <label for="ValorM">Valor da moradia</label>
+          <input type="number" id="ValorM" name="ValorM">
         </div>
 
         <div>
           <label for="Cidade">Cidade</label>
-          <input type="number" id="Cidade" name="Cidade">
+          <input type="text" id="Cidade" name="Cidade">
         </div>
 
         <div>
-          <label for="MediaAlug">Aluguel Médio</label>
+          <label for="CustoV">Custo de vida</label>
+          <input type="number" id="CustoV" name="CustoV">
+        </div>
+
+
+
+        <div>
+          <label for="MediaAlug">Aluguel</label>
           <input type="number" id="MediaAlug" name="mediaAlug">
         </div>
 
         <div>
-          <label for="CustMediaAlug">Custo de vida + Aluguel Médio</label>
+          <label for="CustMediaAlug">Custo de vida + Aluguel</label>
           <input type="number" id="CustMediaAlug" name="CustmediaAlug">
         </div>
 
         <div>
-          <label for="PoderCompra">Poder de compra local(Meédia)</label>
+          <label for="PoderCompra">Poder de compra local(Média)</label>
           <input type="number" id="PoderCompra" name="PoderCompra">
 
         </div>
