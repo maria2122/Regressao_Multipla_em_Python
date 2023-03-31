@@ -8,7 +8,7 @@ app = Flask('meu_app')
 
 @app.route('/')
 def index():
-    return render_template('index.html', titulo='Classificacao')
+    return render_template('index.html', titulo='Classificação')
 
 @app.route('/classifica/', methods=['POST'])
 def classifica():

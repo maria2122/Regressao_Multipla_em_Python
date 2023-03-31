@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Teste do Modelo</title>
+  <link rel="stylesheet" href="/static/bootstrap.css">
   <link rel="stylesheet" href="/static/estilo.css">
 
 </head>
@@ -17,57 +18,93 @@
 
 
 
-<section>
-  <form action="{{ url_for('classifica') }}" method="post" enctype="multipart/form-data">
+  <main>
+    <form action="{{ url_for('classifica') }}" method="post" enctype="multipart/form-data">
 
-    <label for="SalarioAj">Salário medio Ajustado</label>
-    <input type="text" id="SalarioAj" name="SalarioAj">
-
-
-  <div>
-    <label for="SalarioNa">Sálario medio não ajustado</label>
-    <input type="text" id="SalarioNa" name="SalarioNa">
-</div>
-
-  <div>
-    <label for="NumeroEmp">Numero de empregos</label>
-    <input type="text" id="NumeroEmp" name="NumeroEmp">
-</div>
-
-<div>
-    <label for="PrecoMC">Preço mediano da casa</label>
-    <input type="text" id="PrecoMC" name="PrecoMC">
-</div>
-
-    <div>
-  <label for="CustoM">Custo de vida médio</label>
-    <input type="text" id="CustoM" name="CustoM">
-</div>
-
-    <div>
-  <label for="MediaAlug">Aluguel Médio</label>
-    <input type="text" id="MediaAlug" name="mediaAlug">
-</div>
-
-    <div>
-   <label for="CustMediaAlug">Custo de vida + Aluguel Médio</label>
-    <input type="text" id="CustMediaAlug" name="CustmediaAlug">
-</div>
-
-    <div>
-   <label for="PoderCompra">Poder de compra local(Meédia)</label>
-    <input type="text" id="PoderCompra" name="PoderCompra">
-
-</div>
+      <label for="SalarioAj">Salário medio Ajustado</label>
+      <input type="number" id="SalarioAj" name="SalarioAj">
 
 
+      <div>
+        <label for="SalarioNa">Sálario medio não ajustado</label>
+        <input type="number" id="SalarioNa" name="SalarioNa">
+
+
+        <div>
+          <label for="NumeroEmp">Numero de empregos</label>
+          <input type="number" id="NumeroEmp" name="NumeroEmp">
+        </div>
+
+        <div>
+          <label for="PrecoMC">Preço mediano da casa</label>
+          <input type="number" id="PrecoMC" name="PrecoMC">
+        </div>
+
+        <div>
+          <label for="CustoM">Custo de vida médio</label>
+          <input type="number" id="CustoM" name="CustoM">
+        </div>
+
+        <div>
+          <label for="Cidade">Cidade</label>
+          <input type="number" id="Cidade" name="Cidade">
+        </div>
+
+        <div>
+          <label for="MediaAlug">Aluguel Médio</label>
+          <input type="number" id="MediaAlug" name="mediaAlug">
+        </div>
+
+        <div>
+          <label for="CustMediaAlug">Custo de vida + Aluguel Médio</label>
+          <input type="number" id="CustMediaAlug" name="CustmediaAlug">
+        </div>
+
+        <div>
+          <label for="PoderCompra">Poder de compra local(Meédia)</label>
+          <input type="number" id="PoderCompra" name="PoderCompra">
+
+        </div>
+        <div class="text-center">
+          <button onclick="operacao()" type="button" id="botao" class="btn btn-outline-success"
+            value="Enviar">Enviar</button>
+        </div>
+
+    </form>
+
+    <section id="resultado">
 
 
 
-  <input type="submit" id="botao" value="Enviar"></input>
+    </section>
+  </main>
 
-</form>
-</section>
+  <footer>
+
+    <p>&copy copyright
+    <ul>
+      <li> <a href="https://github.com/FortunatoRoncholeta">Fortunato Roncholeta</a> </li>
+      <li> <a href="https://github.com/isaias-s-souza">Isaias Santos de Souza</a> </li>
+      <li> <a href="https://github.com/maria2122">Maria Jaqueline Dos Santos Silva</a> </li>
+
+    </ul>
+
+
+    </p>
+  </footer>
+  <script>
+    function operacao() {
+
+      let resultado = document.getElementById(`resultado`)
+
+      resultado.innerHTML = `testando aqui`
+
+
+    }
+
+
+
+  </script>
 </body>
 
 </html>
