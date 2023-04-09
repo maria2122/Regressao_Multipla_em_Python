@@ -1,4 +1,4 @@
-# Regressão Linear Múltipla
+<p style="text-align: center;"> # Regressão Linear Múltipla</p>
 
 ## Regressão Linear Simples
 
