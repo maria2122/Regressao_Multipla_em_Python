@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import pickle
 
 modelo = pickle.load(open('modelo.sav', 'rb'))
-colunas = ['comprimentoS','larguraS','comprimentoP', 'larguraP']
+colunas = ['Salario_medio','Numero_Empregos','Preco_Moradia', 'Custo_Vida','Cidade','Aluguel', 'Poder_Compra']
 
 app = Flask('meu_app')
 

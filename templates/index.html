@@ -21,64 +21,56 @@
   <main>
     <form action="{{ url_for('classifica') }}" method="post" enctype="multipart/form-data">
 
-      <label for="SalarioA">Salário Ajustado</label>
-      <input type="number" id="SalarioA" name="SalarioA">
-
 
       <div>
-        <label for="SalarioNa">Sálario não ajustado</label>
-        <input type="number" id="SalarioNa" name="SalarioNa">
+        <label for="SalarioM">Sálario medio </label>
+        <input type="number" id="SalarioM" name="SalarioM">
+      </div>
 
+      <div>
+        <label for="NumeroEmp">Número de empregos</label>
+        <input type="number" id="NumeroEmp" name="NumeroEmp">
+      </div>
 
-        <div>
-          <label for="NumeroEmp">Número de empregos</label>
-          <input type="number" id="NumeroEmp" name="NumeroEmp">
-        </div>
+      <div>
+        <label for="CustoM">Custo de moradia</label>
+        <input type="number" id="CustoM" name="CustoM">
+      </div>
 
-        <div>
-          <label for="ValorM">Valor da moradia</label>
-          <input type="number" id="ValorM" name="ValorM">
-        </div>
+      <div>
+        <label for="CustoV">Custo de vida </label>
+        <input type="number" id="CustoV" name="CustoV">
+      </div>
 
-        <div>
-          <label for="Cidade">Cidade</label>
-          <input type="text" id="Cidade" name="Cidade">
-        </div>
+      <div>
+        <label for="Cidade">Cidade</label>
+        <input type="text" id="Cidade" name="Cidade">
+      </div>
 
-        <div>
-          <label for="CustoV">Custo de vida</label>
-          <input type="number" id="CustoV" name="CustoV">
-        </div>
+      <div>
+        <label for="Alug">Aluguel</label>
+        <input type="number" id="Alug" name="Alug">
+      </div>
 
+      <div>
+        <label for="PoderCompra">Poder de compra local</label>
+        <input type="number" id="PoderCompra" name="PoderCompra">
 
-
-        <div>
-          <label for="MediaAlug">Aluguel</label>
-          <input type="number" id="MediaAlug" name="mediaAlug">
-        </div>
-
-        <div>
-          <label for="CustMediaAlug">Custo de vida + Aluguel</label>
-          <input type="number" id="CustMediaAlug" name="CustmediaAlug">
-        </div>
-
-        <div>
-          <label for="PoderCompra">Poder de compra local(Média)</label>
-          <input type="number" id="PoderCompra" name="PoderCompra">
-
-        </div>
-        <div class="text-center">
-          <button onclick="operacao()" type="button" id="botao" class="btn btn-outline-success"
-            value="Enviar">Enviar</button>
-        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="operacao()" type="button" id="botao" class="btn btn-outline-success"
+          value="Enviar">Enviar</button>
+      </div>
 
     </form>
 
-    <section id="resultado">
+    <section>
 
+      <p id="resultado"></p>
 
 
     </section>
+
   </main>
 
   <footer>
@@ -98,8 +90,8 @@
     function operacao() {
 
       let resultado = document.getElementById(`resultado`)
-
       resultado.innerHTML = `testando aqui`
+      
 
 
     }
