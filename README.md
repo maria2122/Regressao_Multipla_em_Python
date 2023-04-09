@@ -1,4 +1,4 @@
-<h1 style="text-align: center;"> # Regressão Linear Múltipla</h1>
+<h1 style="text-align: center;"> Regressão Linear Múltipla</h1>
 
 ## Regressão Linear Simples
 
