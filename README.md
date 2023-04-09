@@ -9,7 +9,8 @@
    ![image](https://user-images.githubusercontent.com/58671604/230751673-44ef41e7-c2dc-4256-ad3e-17ef1d0654c2.png)
     
 
-* Explicar o que é Regressão Linear Múltipla
+## Regressão Linear Múltipla
+
 * Mostrar exemplo via código
 
 https://www.kaggle.com/datasets/thedevastator/u-s-software-developer-salaries
