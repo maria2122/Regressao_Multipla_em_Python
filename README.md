@@ -14,8 +14,10 @@
 
 * Mostrar exemplo via código
 
-https://www.kaggle.com/datasets/thedevastator/u-s-software-developer-salaries
+Dados Utilizados: https://www.kaggle.com/datasets/thedevastator/u-s-software-developer-salaries
 
+Referência utilizada¹: https://www.linkedin.com/pulse/regress%C3%A3o-linear-simples-e-m%C3%BAltipla-em-python-100-pr%C3%A1tico-santos/?originalSubdomain=pt
 
+Referência utilizada²: https://ivanildo-batista13.medium.com/regress%C3%A3o-linear-m%C3%BAltipla-em-python-eb4b6603a3
 
-fontes: https://www.kaggle.com/code/murilospinoza/consumo-cerveja
+Referência utilizada³: https://www.kaggle.com/code/murilospinoza/consumo-cerveja
