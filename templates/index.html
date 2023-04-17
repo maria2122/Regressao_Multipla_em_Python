@@ -19,7 +19,7 @@
 
 
   <main>
-    <form action="{{ url_for('classifica') }}" method="post" enctype="multipart/form-data">
+    <form action="/classifica" method="post" enctype="multipart/form-data">
 
 
       <div>
@@ -43,13 +43,13 @@
       </div>
 
       <div>
-        <label for="Autura">Autura</label>
-        <input type="number" id="Autura" name="Autura">
+        <label for="Altura">Altura</label>
+        <input type="number" id="Altura" name="Altura">
       </div>
 
       <div>
         <label for="TipoR">Tipo de roda</label>
-        <input type="number" id="tipoR" name="tipoR">
+        <input type="number" id="TipoR" name="TipoR">
       </div>
 
       <div>
@@ -59,19 +59,19 @@
       </div>
 
       <div>
-        <label for="consumo">Consumo rodovia</label>
-        <input type="number" id="PoderCompra" name="consumo">
+        <label for="consumoR">Consumo rodovia</label>
+        <input type="number" id="consumoR" name="consumoR">
 
       </div>
 
       <div>
-        <label for="PoderCompra">Consumo cidade</label>
-        <input type="number" id="PoderCompra" name="PoderCompra">
+        <label for="consumoC">Consumo cidade</label>
+        <input type="number" id="consumoC" name="consumoC">
 
       </div>
 
       <div class="text-center">
-        <button onclick="operacao()" type="button" id="botao" class="btn btn-outline-success"
+        <button onclick="operacao()" type="button-submit" id="botao" class="btn btn-outline-success"
           value="Enviar">Enviar</button>
       </div>
 
@@ -80,8 +80,6 @@
     <section>
 
       <div id="resultado">
-
-
 
       </div>
 
@@ -106,7 +104,7 @@
     function operacao() {
 
       let resultado = document.getElementById(`resultado`)
-      resultado.innerHTML = `testando aqui`
+      resultado.innerHTML = `{{ resultado }}`
 
 
       var img = document.createElement('img')
