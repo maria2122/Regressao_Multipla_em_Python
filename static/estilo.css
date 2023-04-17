@@ -67,7 +67,9 @@ input{
     width: 200px;
     height: 60px;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 1.5em;
+    
 }
 
 footer{
@@ -89,8 +91,14 @@ footer>ul>li>a{
     font-size: 2em;
     background-color:var(--cor3);
     border-radius: 10px;
-    width: 300px;
     margin: auto;
-    margin-top: 40px;
+    
 }
 
+#resultado > img{
+   padding: 30px;
+   border-radius: 50px;
+
+    
+
+}

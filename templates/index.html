@@ -23,40 +23,53 @@
 
 
       <div>
-        <label for="SalarioM">Sálario medio </label>
-        <input type="number" id="SalarioM" name="SalarioM">
+        <label for="TamanhoM">Tamanho do Motor</label>
+        <input type="number" id="TamanhoM" name="TamanhoM">
       </div>
 
       <div>
-        <label for="NumeroEmp">Número de empregos</label>
-        <input type="number" id="NumeroEmp" name="NumeroEmp">
+        <label for="PesoC">Peso do carro</label>
+        <input type="number" id="PesoC" name="PesoC">
       </div>
 
       <div>
-        <label for="CustoM">Custo de moradia</label>
-        <input type="number" id="CustoM" name="CustoM">
+        <label for="Potencia">Potencia</label>
+        <input type="number" id="Potencia" name="Potencia">
       </div>
 
       <div>
-        <label for="CustoV">Custo de vida </label>
-        <input type="number" id="CustoV" name="CustoV">
+        <label for="Comprimento">Comprimento </label>
+        <input type="number" id="Comprimento" name="Comprimento">
       </div>
 
       <div>
-        <label for="Cidade">Cidade</label>
-        <input type="text" id="Cidade" name="Cidade">
+        <label for="Autura">Autura</label>
+        <input type="number" id="Autura" name="Autura">
       </div>
 
       <div>
-        <label for="Alug">Aluguel</label>
-        <input type="number" id="Alug" name="Alug">
+        <label for="TipoR">Tipo de roda</label>
+        <input type="number" id="tipoR" name="tipoR">
       </div>
 
       <div>
-        <label for="PoderCompra">Poder de compra local</label>
+        <label for="cilindros">4 cilindros</label>
+        <input type="number" id="cilindros" name="cilindros">
+
+      </div>
+
+      <div>
+        <label for="consumo">Consumo rodovia</label>
+        <input type="number" id="PoderCompra" name="consumo">
+
+      </div>
+
+      <div>
+        <label for="PoderCompra">Consumo cidade</label>
         <input type="number" id="PoderCompra" name="PoderCompra">
 
       </div>
+
       <div class="text-center">
         <button onclick="operacao()" type="button" id="botao" class="btn btn-outline-success"
           value="Enviar">Enviar</button>
@@ -66,8 +79,11 @@
 
     <section>
 
-      <p id="resultado"></p>
+      <div id="resultado">
 
+
+
+      </div>
 
     </section>
 
@@ -91,7 +107,12 @@
 
       let resultado = document.getElementById(`resultado`)
       resultado.innerHTML = `testando aqui`
-      
+
+
+      var img = document.createElement('img')
+      img.setAttribute('src', '../static/img/carro1.gif')
+      resultado.appendChild(img)
+
 
 
     }
