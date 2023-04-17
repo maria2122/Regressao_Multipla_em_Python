@@ -16,6 +16,7 @@
     --cor2: #092327;
     --cor3:#d3fad6;
     --cor4:#d9dfda;
+    --cor5:#00000053;
 }
 
 
@@ -89,7 +90,7 @@ footer>ul>li>a{
 #resultado{ 
     text-align: center;
     font-size: 2em;
-    background-color:var(--cor3);
+    background-color:var(--cor5);
     border-radius: 10px;
     margin: auto;
     
