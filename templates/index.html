@@ -10,63 +10,63 @@
 
 </head>
 <header>
-  <h1>{{ titulo }}</h1>
+  <h1>{{ Xtitulo }}</h1>
 </header>
 
-<body>
+<body onload="teste()">
 
 
 
 
   <main>
-    <form action="/classifica" method="post" enctype="multipart/form-data">
+    <form id="formulario" action="/classifica" method="post" enctype="multipart/form-data">
 
 
       <div>
         <label for="TamanhoM">Tamanho do Motor</label>
-        <input type="number" id="TamanhoM" name="TamanhoM">
+        <input type="number" step="any" id="TamanhoM" placeholder="digite um valor" name="TamanhoM" required>
       </div>
 
       <div>
         <label for="PesoC">Peso do carro</label>
-        <input type="number" id="PesoC" name="PesoC">
+        <input type="number" step="any" id="PesoC" placeholder="digite um valor" name="PesoC" required>
       </div>
 
       <div>
         <label for="Potencia">Potencia</label>
-        <input type="number" id="Potencia" name="Potencia">
+        <input type="number" step="any" id="Potencia" placeholder="digite um valor" name="Potencia" required>
       </div>
 
       <div>
         <label for="Comprimento">Comprimento </label>
-        <input type="number" id="Comprimento" name="Comprimento">
+        <input type="number" step="any" id="Comprimento" placeholder="digite um valor" name="Comprimento" required>
       </div>
 
       <div>
         <label for="Altura">Altura</label>
-        <input type="number" id="Altura" name="Altura">
+        <input type="number" step="any" id="Altura" placeholder="digite um valor" name="Altura" required>
       </div>
 
       <div>
         <label for="TipoR">Tipo de roda</label>
-        <input type="number" id="TipoR" name="TipoR">
+        <input type="number" step="any" id="TipoR" placeholder="digite um valor" name="TipoR" required>
       </div>
 
       <div>
         <label for="cilindros">4 cilindros</label>
-        <input type="number" id="cilindros" name="cilindros">
+        <input type="number" step="any" id="cilindros" placeholder="digite um valor" name="cilindros" required>
 
       </div>
 
       <div>
         <label for="consumoR">Consumo rodovia</label>
-        <input type="number" id="consumoR" name="consumoR">
+        <input type="number" step="any" id="consumoR" placeholder="digite um valor" name="consumoR" required>
 
       </div>
 
       <div>
         <label for="consumoC">Consumo cidade</label>
-        <input type="number" id="consumoC" name="consumoC">
+        <input type="number" step="any" id="consumoC" placeholder="digite um valor" name="consumoC" required>
 
       </div>
 
@@ -80,6 +80,7 @@
     <section>
 
       <div id="resultado">
+
 
       </div>
 
@@ -100,24 +101,38 @@
 
     </p>
   </footer>
-  <script>
-    function operacao() {
 
-      let resultado = document.getElementById(`resultado`)
-      resultado.innerHTML = `{{ resultado }}`
-
-
-      var img = document.createElement('img')
-      img.setAttribute('src', '../static/img/carro1.gif')
-      resultado.appendChild(img)
-
-
-
-    }
-
-
-
-  </script>
 </body>
+<script>
+  const form = document.querySelector('#formulario');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // previne o envio normal do formulário
+    const data = new FormData(form); // cria um objeto FormData com os dados do formulário
+    const xhr = new XMLHttpRequest(); // cria uma nova solicitação XMLHttpRequest
+
+    xhr.open('POST', '/classifica'); // define a URL e o método HTTP
+    xhr.onload = function () { // lida com a resposta da solicitação
+      if (xhr.status === 200) {
+
+        const response = JSON.parse(xhr.responseText); // obtém a resposta como um objeto JavaScript
+        console.log(response); // faz algo com a resposta
+        let resultado = document.getElementById(`resultado`)
+        console.log('foi');
+
+        resultado.innerHTML = 'O valor aproximado do seu veiculo será de: <br>' + 'R$' + response.resultado
+
+        var img = document.createElement('img')
+        img.setAttribute('src', '../static/img/carro1.gif')
+        resultado.appendChild(img)
+
+      } else {
+        console.log('Erro ao enviar dados: ' + xhr.status); // lida com erros
+      }
+    };
+
+    xhr.send(data); // envia a solicitação com os dados do formulário
+  });
+</script>
 
 </html>
