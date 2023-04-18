@@ -21,3 +21,5 @@ Referência utilizada¹: https://www.linkedin.com/pulse/regress%C3%A3o-linear-si
 Referência utilizada²: https://ivanildo-batista13.medium.com/regress%C3%A3o-linear-m%C3%BAltipla-em-python-eb4b6603a3
 
 Referência utilizada³: https://www.kaggle.com/code/murilospinoza/consumo-cerveja
+
+##https://meet.google.com/cnq-trnj-osb
